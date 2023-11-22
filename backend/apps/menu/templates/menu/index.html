@@ -1,0 +1,15 @@
+{% extends 'layout/base.html' %}
+{% load menu_tags %}
+
+{% block content %}
+<a href="{% url 'base' %}">Главная</a>
+
+{% get_menu_names as menu %}
+{% for menu_obj in menu %}
+{% if menu_obj.count != 0 %}
+<h2>{{menu_obj.title}}</h2>
+{% endif %}
+{% draw_menu menu_obj.id obj=obj %}
+{% endfor %}
+
+{% endblock %}
