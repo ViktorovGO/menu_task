@@ -49,7 +49,7 @@ cd backend/
 python manage.py runserver
 ~~~
 
--Перейти по адресу 
+- Перейти по адресу 
 ~~~
 http://localhost:8000/
 ~~~
